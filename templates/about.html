@@ -1,0 +1,35 @@
+{% extends "layout.html" %} {% block head %}
+<title>About</title>
+{% endblock %} {% block body %}
+
+<main>
+  <section class="bg-white dark:bg-gray-900">
+    <div
+      class="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0"
+    >
+      <div class="mr-auto place-self-center lg:col-span-7">
+        <h1
+          class="mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight dark:text-white md:text-5xl xl:text-6xl"
+        >
+          Hi, I'm {{ name }}
+        </h1>
+        <p
+          class="mb-6 max-w-2xl font-light text-gray-500 dark:text-gray-400 md:text-lg lg:mb-8 lg:text-xl"
+        >
+          My NPM is {{ npm }}
+        </p>
+      </div>
+      <div class="hidden lg:col-span-5 lg:mt-0 lg:flex">
+        <img
+          src="https://media.licdn.com/dms/image/v2/D5603AQEfkpaMiJlzMQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722746723869?e=1735171200&v=beta&t=1GC1H-R9yG9IGbeCgj42adW45iX7WRgbflir4cyNJYI"
+          alt="Profile Picture"
+          class="rounded-full shadow-2xl"
+        />
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock %}
+
+<script src="<https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js>"></script>
